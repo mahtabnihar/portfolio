@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Mahtab Nihar',
   author: 'Mahtab Nihar',
   headerTitle: 'Mahtab Nihar',
-  description: 'Founder of Sweez. I build software and the company around it.',
+  description: 'I build software and the company around it.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://mahtabnihar.com/',
@@ -10,7 +10,7 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/myphoto.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'hi@mahtabnihar.com',
+  email: 'contact@mahtabnihar.com',
   facebook: 'https://www.facebook.com/mahtabnihar',
   instagram: 'https://www.instagram.com/mahtabnihar',
   twitter: 'https://x.com/MahtabNihar',
@@ -20,7 +20,7 @@ const siteMetadata = {
   telegram: 'https://t.me/mahtabnihar',
   // Cal.com path. "username" lists every event type. "username/30min" opens one event.
   // Live page: https://cal.com/<calLink>
-  calLink: 'mahtabmashuq/15min',
+  calLink: 'sweez-l2ont0/15min',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

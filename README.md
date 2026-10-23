@@ -1,44 +1,13 @@
-<p align="center">
-  <a href="https://mahtabnihar.com">
-    <img alt="Live site" src="https://img.shields.io/badge/Live_site-mahtabnihar.com-111111?style=for-the-badge&logo=safari&logoColor=white">
-  </a>
-  <a href="https://github.com/mahtabnihar/portfolio">
-    <img alt="GitHub" src="https://img.shields.io/badge/GitHub-mahtabnihar%2Fportfolio-18181b?style=for-the-badge&logo=github&logoColor=white">
-  </a>
-  <a href="https://sweez.xyz">
-    <img alt="Sweez" src="https://img.shields.io/badge/Sweez-sweez.xyz-3B82F6?style=for-the-badge">
-  </a>
-  <a href="./LICENSE">
-    <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-3f3f46?style=for-the-badge">
-  </a>
-</p>
+![Live site](https://img.shields.io/badge/Live_site-mahtabnihar.com-111111?style=for-the-badge&logo=safari&logoColor=white) [](https://github.com/mahtabnihar/portfolio)![GitHub](https://img.shields.io/badge/GitHub-mahtabnihar%2Fportfolio-18181b?style=for-the-badge&logo=github&logoColor=white)[ ](https://github.com/mahtabnihar/portfolio)![Sweez](https://img.shields.io/badge/Sweez-sweez.xyz-3B82F6?style=for-the-badge)[ ](https://github.com/mahtabnihar/portfolio)![MIT License](https://img.shields.io/badge/License-MIT-3f3f46?style=for-the-badge)[
 
-<h1 align="center">Mahtab Nihar</h1>
+# Mahtab Nihar
 
-<p align="center">
-  Founder of <a href="https://sweez.xyz">Sweez</a>. I build software and the company around it.<br>
-  This repository is the source of my personal site: home, notes, projects, and a booking page.
-</p>
+Founder of [Sweez](https://sweez.xyz).  
+This repository is the source of my personal site: home, notes, projects, and a booking page.
 
-<p align="center">
-  <a href="https://mahtabnihar.com"><strong>Open the live website</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://mahtabnihar.com/#book">Book a call</a>
-  &nbsp;·&nbsp;
-  <a href="mailto:hi@mahtabnihar.com">hi@mahtabnihar.com</a>
-</p>
+**[Open the live website](https://mahtabnihar.com)**  ·  [Book a call](https://mahtabnihar.com/#book)  ·  [contact@mahtabnihar.com](mailto:contact@mahtabnihar.com)
 
-<p align="center">
-  <a href="https://github.com/mahtabnihar">GitHub</a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/mahtabnihar">LinkedIn</a>
-  &nbsp;·&nbsp;
-  <a href="https://x.com/MahtabNihar">X</a>
-  &nbsp;·&nbsp;
-  <a href="https://www.instagram.com/mahtabnihar">Instagram</a>
-  &nbsp;·&nbsp;
-  <a href="https://www.youtube.com/@mahtabnihar">YouTube</a>
-</p>
+[GitHub](https://github.com/mahtabnihar)  ·  [LinkedIn](https://www.linkedin.com/in/mahtabnihar)  ·  [X](https://x.com/MahtabNihar)  ·  [Instagram](https://www.instagram.com/mahtabnihar)  ·  [YouTube](https://www.youtube.com/@mahtabnihar)
 
 ---
 
@@ -57,13 +26,7 @@ The interface follows the system theme, with a glass navigation bar, a soft anim
 
 ## Stack
 
-<p>
-  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-12-000000?style=flat-square&logo=nextdotjs&logoColor=white">
-  <img alt="React" src="https://img.shields.io/badge/React-17-149ECA?style=flat-square&logo=react&logoColor=white">
-  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-3-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white">
-  <img alt="MDX" src="https://img.shields.io/badge/MDX-notes-F9AC00?style=flat-square&logo=mdx&logoColor=white">
-  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=nodedotjs&logoColor=white">
-</p>
+![Next.js](https://img.shields.io/badge/Next.js-12-000000?style=flat-square&logo=nextdotjs&logoColor=white)![React](https://img.shields.io/badge/React-17-149ECA?style=flat-square&logo=react&logoColor=white)![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white)![MDX](https://img.shields.io/badge/MDX-notes-F9AC00?style=flat-square&logo=mdx&logoColor=white)![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 
 Notes are MDX files. Project cards are one JavaScript list. Both are read when the site builds, so a new file is on the site after the dev server refreshes or you deploy.
 
@@ -153,6 +116,4 @@ The pages would not need a new layout. Until a database exists, adding a file is
 
 This project is [MIT](LICENSE) licensed. It started from [Tailwind Nextjs Starter Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) by [Timothy Lin](https://github.com/timlrx), and the layout, motion, and content have been rebuilt for this site.
 
-<p align="center">
-  <a href="https://mahtabnihar.com"><strong>mahtabnihar.com</strong></a>
-</p>
+**[mahtabnihar.com](https://mahtabnihar.com)**
