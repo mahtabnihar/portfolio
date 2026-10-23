@@ -1,27 +1,59 @@
-![raph-www-banner](/public/static/images/twitter-card.png)
+# How to write projects and notes
 
-# Raphael personal website (https://raphaelchelly.com)
+Projects and notes are files in the repo. The site reads them when it builds, so a new file shows up after the dev server refreshes or you deploy.
 
-Welcome to my personal website and portfolio. 🛸
+## Notes
 
-- 🤖 **Made** with [Next.js](https://nextjs.org/) and based on the [Tailwind Nextjs starter Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) template. [Repo](https://github.com/timlrx/tailwind-nextjs-starter-blog)
-- 🎨 **Styling** with [Tailwind CSS](https://tailwindcss.com)
-- 💾 **Hosted** by [Vercel](https://vercel.com)
-- 📝 **Writing** articles with [MDX](https://mdxjs.com/)
+A note is a Markdown file under `data/blog/`. The Notes page (`/blog`) lists every file there that is not a draft, newest date first.
 
-## Credits and Inspiration
+The address is the file path:
 
-- Template from [Tailwind nextjs starter blog template](https://github.com/timlrx/tailwind-nextjs-starter-blog) © [`@timlrx`](https://github.com/timlrx)
-- Inspiration from [`@marcbouchenoire`](https://github.com/marcbouchenoire) personal website : [Repo](https://github.com/marcbouchenoire/marcbouchenoire.com)
+- `data/blog/sweez-launch.mdx` becomes `/blog/sweez-launch`
+- `data/blog/projects/sweez.mdx` becomes `/blog/projects/sweez`
 
-## Roadmap
+Start the file with this header, then write normal Markdown underneath:
 
-- [ ] Multi-language Support
-  - [x] English
-  - [ ] French
+```md
+---
+title: Why I started Sweez
+date: '2026-10-23'
+tags: ['Sweez', 'Product']
+draft: false
+summary: 'One sentence that shows up on the Notes list.'
+images: ['/static/images/projects/sweez.png']
+---
 
-- [ ] Adding Spotify API Get Currently Playing Track
+The first paragraph is the note.
 
-## Licence
+## A section
 
-[MIT](https://github.com/timlrx/tailwind-nextjs-starter-blog/blob/master/LICENSE) © [Timothy Lin](https://www.timrlx.com)
+**Bold**, lists, and links work.
+```
+
+Set `draft: true` while you are still writing. Drafts stay off the Notes list.
+
+Put images in `public/static/images/` and refer to them as `/static/images/...`.
+
+## Projects
+
+A project card is an entry in `data/projectsData.js`. That file is what the homepage and the Projects page render. Each card needs a title, a short description, an image, and a link:
+
+```js
+{
+  title: 'Sweez',
+  description: 'Software, SaaS, and automation for growing businesses.',
+  imgSrc: '/static/images/projects/sweez.png',
+  href: '/blog/projects/sweez',
+}
+```
+
+The card is the preview. The long write-up is a note, and `href` points at that note. A project with no write-up yet can use `href: ''` and the card will not link anywhere.
+
+## A database later
+
+The pages already load their content in one place: notes from the files in `data/blog/`, project cards from `data/projectsData.js`. A database can replace those two reads and return the same fields.
+
+- A note needs `title`, `date`, `summary`, `tags`, and the body.
+- A project card needs `title`, `description`, `imgSrc`, and `href`.
+
+The pages would not need a new layout. Until a database exists, adding a file is the way to publish.

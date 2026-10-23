@@ -1,19 +1,26 @@
 const siteMetadata = {
-  title: 'Raphaël Chelly - Digital marketing project manager',
-  author: 'Raphaël Chelly',
-  headerTitle: 'Raphaël Chelly',
-  description: 'Portfolio of a digital marketing guy who codes a bit.',
+  title: 'Mahtab Nihar',
+  author: 'Mahtab Nihar',
+  headerTitle: 'Mahtab Nihar',
+  description: 'Founder of Sweez. I build software and the company around it.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://www.raphaelchelly.com/',
-  siteRepo: 'https://github.com/raphaelchelly/raph_www',
-  siteLogo: '/static/images/raph-logo.png',
-  image: '/static/images/avatar.jpg',
+  siteUrl: 'https://mahtabnihar.com/',
+  siteRepo: 'https://github.com/mahtabnihar/portfolio',
+  siteLogo: '/static/images/logo.png',
+  image: '/static/images/myphoto.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'hi@raphaelchelly.com',
-  github: 'https://github.com/raphaelchelly',
-  twitter: 'https://twitter.com/raphael_chelly',
-  linkedin: 'https://www.linkedin.com/in/raphaelchelly',
+  email: 'hi@mahtabnihar.com',
+  facebook: 'https://www.facebook.com/mahtabnihar',
+  instagram: 'https://www.instagram.com/mahtabnihar',
+  twitter: 'https://x.com/MahtabNihar',
+  github: 'https://github.com/mahtabnihar',
+  linkedin: 'https://www.linkedin.com/in/mahtabnihar',
+  youtube: 'https://www.youtube.com/@mahtabnihar',
+  telegram: 'https://t.me/mahtabnihar',
+  // Cal.com path. "username" lists every event type. "username/30min" opens one event.
+  // Live page: https://cal.com/<calLink>
+  calLink: 'mahtabmashuq/15min',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
@@ -22,7 +29,7 @@ const siteMetadata = {
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: false, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
-    googleAnalyticsId: 'G-YBS6CTTW3S', // e.g. UA-000000-2 or G-XXXXXXX
+    googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
   },
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue

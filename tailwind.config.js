@@ -181,10 +181,21 @@ module.exports = {
             height: '0.75rem',
           },
         },
+        rise: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(16px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
       },
       animation: {
         shrink: 'shrink 1.5s infinte',
         expand: 'expand 1.5s infinte',
+        rise: 'rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both',
       },
     },
   },

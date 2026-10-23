@@ -1,21 +1,21 @@
-import Link from '@/components/Link'
-import PageTitle from '@/components/PageTitle'
-import { BlogSEO } from '@/components/SEO'
-import siteMetadata from '@/data/siteMetadata'
-import formatDate from '@/lib/utils/formatDate'
-import ScrollTopAndComment from '@/components/ScrollTopAndComment'
-import Image from '@/components/Image'
+import Link from '@/components/Link';
+import PageTitle from '@/components/PageTitle';
+import { BlogSEO } from '@/components/SEO';
+import siteMetadata from '@/data/siteMetadata';
+import formatDate from '@/lib/utils/formatDate';
+import ScrollTopAndComment from '@/components/ScrollTopAndComment';
+import Image from '@/components/Image';
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { date, title, slug, fileName, readingTime } = frontMatter
+  const { date, title, slug, fileName, readingTime } = frontMatter;
 
-  const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+  const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`;
   const discussUrl = (slug) =>
     `https://mobile.twitter.com/search?q=${encodeURIComponent(
       `${siteMetadata.siteUrl}/blog/${slug}`
-    )}`
+    )}`;
 
-  const pageViews = undefined
+  const pageViews = undefined;
 
   return (
     <>
@@ -43,13 +43,16 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   <Link key={author.name} href={author.twitter}>
                     <div className="mb-1 flex items-center space-x-2">
                       {author.avatar && (
-                        <Image
-                          src={author.avatar}
-                          width="24px"
-                          height="24px"
-                          alt="avatar"
-                          className="h-10 w-10 rounded-full"
-                        />
+                        <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                          <Image
+                            src={author.avatar}
+                            layout="fill"
+                            alt="avatar"
+                            objectFit="cover"
+                            objectPosition="center 28%"
+                            className="origin-center scale-[1.65]"
+                          />
+                        </div>
                       )}
                       <dl className="whitespace-nowrap text-sm font-medium leading-5">
                         <dt className="sr-only">Name</dt>
@@ -104,5 +107,5 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
         </div>
       </article>
     </>
-  )
+  );
 }

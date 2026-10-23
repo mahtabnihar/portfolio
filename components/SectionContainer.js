@@ -1,5 +1,11 @@
-export default function SectionContainer({ children }) {
+export default function SectionContainer({ children, wide = false }) {
   return (
-    <div className="mx-auto my-auto max-w-2xl px-4 sm:px-6 xl:max-w-2xl xl:px-0">{children}</div>
+    <div
+      className={`mx-auto my-auto px-4 sm:px-6 ${
+        wide ? 'max-w-6xl xl:px-2' : 'max-w-2xl xl:max-w-2xl xl:px-0'
+      }`}
+    >
+      {children}
+    </div>
   );
 }

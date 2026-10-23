@@ -1,10 +1,10 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Mahtab Nihar",
+  "short_name": "Mahtab Nihar",
   "icons": [
     {
-      "src": "/android-chrome-96x96.png",
-      "sizes": "96x96",
+      "src": "/static/images/logo.png",
+      "sizes": "1024x1024",
       "type": "image/png"
     }
   ],

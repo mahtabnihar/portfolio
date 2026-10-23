@@ -10,6 +10,41 @@ html {
   scroll-behavior: smooth;
 }
 
+.on-ascii {
+  color: #18181b;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.on-ascii span,
+.on-ascii-muted span {
+  text-shadow: inherit;
+}
+
+.dark .on-ascii {
+  color: #fafafa;
+  text-shadow: 0 1px 0 rgba(2, 6, 23, 0.9);
+}
+
+.on-ascii-muted {
+  color: #27272a;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.88);
+}
+
+.dark .on-ascii-muted {
+  color: #f4f4f5;
+  text-shadow: 0 1px 0 rgba(2, 6, 23, 0.85);
+}
+
+.on-ascii-link {
+  color: #0c4a6e;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.96);
+}
+
+.dark .on-ascii-link {
+  color: #e0f2fe;
+  text-shadow: 0 1px 0 rgba(2, 6, 23, 0.9);
+}
+
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {

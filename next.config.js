@@ -1,3 +1,5 @@
+const TerserPlugin = require('terser-webpack-plugin');
+
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
@@ -5,13 +7,13 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.googletagmanager.com *.google-analytics.com giscus.app;
-  style-src 'self' 'unsafe-inline' *.googleapis.com;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.googletagmanager.com *.google-analytics.com giscus.app https://app.cal.com https://cal.com;
+  style-src 'self' 'unsafe-inline' *.googleapis.com https://app.cal.com https://cal.com;
   img-src * blob: data:;
   media-src 'none';
   connect-src *;
-  font-src 'self';
-  frame-src giscus.app youtube.com www.youtube.com facebook.com www.facebook.com;
+  font-src 'self' data: https://app.cal.com https://cal.com;
+  frame-src giscus.app youtube.com www.youtube.com facebook.com www.facebook.com https://app.cal.com https://cal.com;
 `;
 
 const securityHeaders = [
@@ -60,6 +62,15 @@ module.exports = withBundleAnalyzer({
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/book',
+        destination: '/#book',
+        permanent: false,
+      },
+    ];
+  },
   async headers() {
     return [
       {
@@ -68,20 +79,22 @@ module.exports = withBundleAnalyzer({
       },
     ];
   },
-  webpack: (config, { dev, isServer }) => {
+  webpack: (config, { dev }) => {
     config.module.rules.push({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     });
 
-    if (!dev && !isServer) {
-      // Replace React with Preact only in client production build
-      Object.assign(config.resolve.alias, {
-        'react/jsx-runtime.js': 'preact/compat/jsx-runtime',
-        react: 'preact/compat',
-        'react-dom/test-utils': 'preact/test-utils',
-        'react-dom': 'preact/compat',
-      });
+    if (!dev) {
+      config.optimization.minimizer = [
+        new TerserPlugin({
+          terserOptions: {
+            ecma: 2020,
+            compress: { ecma: 2020 },
+            format: { ecma: 2020 },
+          },
+        }),
+      ];
     }
 
     return config;
