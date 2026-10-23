@@ -10,11 +10,11 @@
     "url": "https://github.com/mahtabnihar/portfolio.git"
   },
   "scripts": {
-    "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
-    "dev": "next dev",
-    "build": "next build && node ./scripts/generate-sitemap",
-    "serve": "next start",
-    "analyze": "cross-env ANALYZE=true next build",
+    "start": "cross-env SOCKET=true node -r ./scripts/node-polyfill.js ./scripts/next-remote-watch.js ./data",
+    "dev": "node ./scripts/run-next.js dev",
+    "build": "node ./scripts/run-next.js build && node ./scripts/generate-sitemap",
+    "serve": "node ./scripts/run-next.js start",
+    "analyze": "cross-env ANALYZE=true node ./scripts/run-next.js build",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
     "prepare": "husky install"
   },

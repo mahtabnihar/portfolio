@@ -26,6 +26,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
+        display: ['Eagle Horizon', 'cursive'],
       },
       colors: {
         'background-color': '#1F2023',

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="space-y-2 pt-6 pb-4 md:space-y-5">
+      <div className="space-y-2 pb-4 pt-6 md:space-y-5">
         <div className="flex flex-col-reverse items-start sm:flex-row">
           <div className="flex flex-col sm:pr-8">
             <BlurText
@@ -26,7 +26,7 @@ export default function Home() {
               stepDuration={0.45}
               blur={14}
               distance={18}
-              className="on-ascii mb-1 text-3xl font-bold tracking-tight md:text-5xl"
+              className="on-ascii mb-1 font-display text-4xl font-normal leading-none tracking-normal md:text-6xl"
             />
             <BlurText
               as="h2"
@@ -126,7 +126,7 @@ export default function Home() {
           </li>
         </ul>
       </div>
-      <div className="content mt-12 mb-8">
+      <div className="content mb-8 mt-12">
         <BlurText
           as="h2"
           text="Projects"
