@@ -1,7 +1,14 @@
 {
-  "name": "tailwind-nextjs-starter-blog",
+  "name": "portfolio",
   "version": "1.5.4",
   "private": true,
+  "description": "Personal site and portfolio of Mahtab Nihar, founder of Sweez.",
+  "author": "Mahtab Nihar <hi@mahtabnihar.com>",
+  "homepage": "https://mahtabnihar.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mahtabnihar/portfolio.git"
+  },
   "scripts": {
     "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
     "dev": "next dev",
